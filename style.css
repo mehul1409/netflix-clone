@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Nunito:wght@200&family=Poppins:wght@300;400;500;600;700&family=Roboto&family=Roboto+Slab:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(57, 56, 56);
+    color:#fff;
+}
+
+.header{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/header-image.png);
+    background-position: center;
+    background-size: cover;
+    padding:10px 8%;
+    position: relative;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:10px 0;
+}
+
+.logo{
+    width:150px;
+    cursor:pointer;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.globe{
+    height:20px;
+    width:20px;
+    margin-bottom: 2px;
+}
+
+.btn1-div{
+    border:1px solid white;
+    border-radius: 6px;
+    padding:2px 5px;
+}
+
+.btn1{
+    outline: 0;
+    border: 0;
+    color:white;
+    background: transparent;
+    font-size:15px;
+}
+
+.btn2{
+    outline: 0;
+    border: 0;
+    color:white;
+    background:#db0001;
+    font-size:15px;
+    padding:3px 8px;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:85vh;
+}
+
+.finsh-btn{
+    outline: 0;
+    border: 0;
+    background-color: #db0001;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    margin-top:10px;
+}
+
+.features{
+    padding:50px 12%;
+    font-size:22px;
+    background: #000;
+}
+.row{
+    display: flex;
+    width:100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:5px 0;
+}
+
+.text-col,.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img{
+    display:block;
+    width:90%;
+    margin:auto;
+}
+
+.features h1{
+    font-size:50px;
+    font-weight:600;
+}
+
+.faq{
+    padding:10px;
+    text-align: center;
+    font-size:18px;
+    background-color: #000;
+}
+
+.faq h2{
+    font-weight:500;
+    font-size:40px;
+}
+
+.accordion{
+    margin:60px auto;
+    width:100%;
+    max-width: 750px;  
+}
+
+.accordion li {
+    list-style: none;
+    width:100%;
+    padding: 5px;
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding:20px;
+    font-size:18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content:'+';
+    font-size: 45px;
+    position:absolute;
+    right:20px;
+    transition: transform 0.1s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    background-color: #303030;
+    text-align: left;
+    padding:0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked +  label +.content{
+    max-height:600px;
+    padding:30px 20px;
+}
+
+.accordion label:hover{
+    background-color: #464545;
+}
+
+.accordion input[type="radio"]:checked +  label::after{
+    transform: rotate(135deg);
+}
+
+footer{
+    background-color: #000;
+    padding:50px 15% 10px;
+    color:#bfbaba
+}
+
+.footer-content{
+    padding-top:20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:40px;
+}
+
+.footer-content .div1 div,.footer-content .div2 div,.footer-content .div3 div{
+    margin-top:20px;
+}
+.footer-content .div1 div,.footer-content .div2 div,.footer-content .div3 div{
+    text-decoration: underline;
+}
